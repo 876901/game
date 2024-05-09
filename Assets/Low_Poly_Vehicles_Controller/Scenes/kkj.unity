@@ -1020,7 +1020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a9a76afcfac798e48b04e5a0d305a985, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a9a76afcfac798e48b04e5a0d305a985, type: 3}
       propertyPath: m_LocalRotation.y
@@ -3414,6 +3414,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d53c2d64fc85e0a47b5f91de425205a7, type: 3}
+--- !u!1 &735020041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f8fe0353eb3920643afb72864b58b3c8, type: 3}
+  m_PrefabInstance: {fileID: 1945417373}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &735020045
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735020041}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &735020046
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735020041}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7346554, y: 1.2485863, z: 5.3355637}
+  m_Center: {x: 0.0000005364418, y: 0.8630884, z: 0.008821249}
 --- !u!1001 &754312228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3475,6 +3509,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad96f4cea17340f4fbcf6b1ef4a88ca4, type: 3}
+--- !u!1 &760352992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 760352993}
+  - component: {fileID: 760352994}
+  m_Layer: 0
+  m_Name: spawnPoint
+  m_TagString: Spawn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &760352993
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760352992}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 813}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &760352994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760352992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00e1f0ab310101548b51eb0ba59c029f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyTankPrefab: {fileID: 735020041}
+  waveInterval: 1
+  enemiesPerWave: 5
+  spawnDistanceMin: 20
+  spawnDistanceMax: 40
 --- !u!4 &762115511 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5496328056978243567, guid: ad96f4cea17340f4fbcf6b1ef4a88ca4, type: 3}
@@ -5174,7 +5257,7 @@ GameObject:
   - component: {fileID: 1388630953}
   m_Layer: 0
   m_Name: Vehicles
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
