@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -91,11 +90,10 @@ public class Enemy : MonoBehaviour
         direction = target.transform.position - this.transform.position; //타겟으로 향하는 방향을 계산합니다. target와 this의 위치를 빼면 현재 객체에서 타겟까지의 방향이 얻어집니다.
         distance = Vector3.Distance(target.transform.position, this.transform.position);//현재 객체와 타겟 사이의 거리를 계산합니다. 이는 두 점 사이의 유클리드 거리를 계산하여 얻어집니다.
         */
-        fTime += Time.deltaTime;
+        
         distance = Vector3.Distance(target.transform.position, this.transform.position);//현재 객체와 타겟 사이의 거리를 계산합니다. 이는 두 점 사이의 유클리드 거리를 계산하여 얻어집니다.
-
-        direction = target.transform.position - this.transform.position;
-
+        fTime += Time.deltaTime;
+        //direction = target.transform.position - this.transform.position;
         if (distance < 1000.0f)
         {
 
@@ -104,7 +102,7 @@ public class Enemy : MonoBehaviour
             if (fTime > 5.0f)
             {
 
-                GameObject bullet = Instantiate(bulletPrefab, spPoint.position, spPoint.rotation) as GameObject; // 두번째, 세번째 인자는 비워져있어도 unity에ㅔ서 지정한 위치값, 회전값을 지정 함 
+                GameObject bullet = Instantiate(bulletPrefab, spPoint.position, spPoint.rotation) as GameObject; // 두번째, 세번째 인자는 비워져있어도 unity에서 지정한 위치값, 회전값을 지정 함 
                 Rigidbody bulletAddforce = bullet.GetComponent<Rigidbody>(); // 리지드 바디 가져오기 bullet에서
                 bulletAddforce.AddForce(turret.transform.forward * power); // turret 게임 오브젝트의 전방 방향으로 power만큼 발사
                                                                            //Destroy(bullet, DestroyTime);

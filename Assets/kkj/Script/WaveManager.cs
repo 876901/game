@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class WaveManager : MonoBehaviour
+public class WaveManager :MonoBehaviour
 {
     public GameObject enemyTankPrefab; // 적 탱크 프리팹
     public float waveInterval = 1f; // 웨이브 간격 (초)

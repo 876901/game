@@ -84,7 +84,7 @@ public class GunsController : MonoBehaviour
 
         positionRecoil += kickBackRecoilBarrel;
 
-        if(ShellPrefab != null)
+        if (ShellPrefab != null)
         {
             ejectPoint.localEulerAngles = new Vector3(Random.Range(-randomRotation.x, randomRotation.x), Random.Range(-randomRotation.y, randomRotation.y), Random.Range(-randomRotation.z, randomRotation.z));
 
@@ -102,7 +102,7 @@ public class GunsController : MonoBehaviour
             Debug.LogWarning("Please attribute a shell prefab !");
         }
 
-        if(muzzleFlash)
+        if (muzzleFlash)
             muzzleFlash.Play();
 
         barrelSource.pitch = Random.Range(minPitch, maxPitch);
@@ -111,5 +111,18 @@ public class GunsController : MonoBehaviour
         rb.AddForceAtPosition(recoilPosition.forward * recoilForce, recoilPosition.position, ForceMode.Impulse);
 
         fireTimer = 0.0f;
+
+        // Raycast to detect if the bullet hits an enemy
+        RaycastHit hit;
+        if (Physics.Raycast(ejectPoint.position, ejectPoint.forward, out hit, Mathf.Infinity))
+        {
+            if (hit.collider.gameObject.CompareTag("Enemy"))
+            {
+                Score.Hit++;
+                // Destroy the enemy object
+                Destroy(hit.collider.gameObject);
+            }
+        }
     }
+
 }

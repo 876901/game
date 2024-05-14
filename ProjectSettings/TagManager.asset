@@ -9,6 +9,8 @@ TagManager:
   - WALL
   - VehiclesCamera
   - Spawn
+  - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX

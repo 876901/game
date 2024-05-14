@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EspPoint: {fileID: 8921775922280040421}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 139800915129372765, guid: 6cb4cdc6e5e59c9419398c8ee20f65d9, type: 3}
   turret: {fileID: 7458312591920669508}
 --- !u!4 &7458312591921037164 stripped
 Transform:
