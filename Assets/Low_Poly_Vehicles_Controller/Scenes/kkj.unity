@@ -5764,6 +5764,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1388630953}
     m_Modifications:
+    - target: {fileID: 887112620832804831, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2484185305493543437, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
       propertyPath: m_Name
       value: BRDM2_Desert
@@ -5771,6 +5775,10 @@ PrefabInstance:
     - target: {fileID: 2484185305493543437, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3254544983015720380, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: m_TagString
+      value: Vehicles
       objectReference: {fileID: 0}
     - target: {fileID: 6473901867720819401, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
       propertyPath: m_RootOrder

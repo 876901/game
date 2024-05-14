@@ -28,6 +28,7 @@ public class Bullet : MonoBehaviour
         if (col.gameObject.tag == "Vehicles")
         {
             Hp.HP --;
+            Debug.Log("ºÎµúÈû");
         }
 
         AudioSource.PlayClipAtPoint(sound, this.transform.position);// transform.position À§Ä¡¿¡¼­ Àç»ý
