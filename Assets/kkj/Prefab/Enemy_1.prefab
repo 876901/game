@@ -542,26 +542,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7458312591920669524}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.7346554, y: 1.2485863, z: 5.3355637}
   m_Center: {x: 0.0000005364418, y: 0.8630884, z: 0.008821249}
---- !u!114 &2172380762865791707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7458312591920669524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2731870df519cc4483430e73d943481, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EspPoint: {fileID: 8921775922280040421}
-  bulletPrefab: {fileID: 139800915129372765, guid: 6cb4cdc6e5e59c9419398c8ee20f65d9, type: 3}
-  turret: {fileID: 7458312591920669508}
 --- !u!195 &963462884
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -584,6 +569,21 @@ NavMeshAgent:
   m_BaseOffset: 0.01
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &2172380762865791707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7458312591920669524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2731870df519cc4483430e73d943481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EspPoint: {fileID: 8921775922280040421}
+  bulletPrefab: {fileID: 139800915129372765, guid: 6cb4cdc6e5e59c9419398c8ee20f65d9, type: 3}
+  turret: {fileID: 7458312591920669508}
 --- !u!4 &7458312591921037164 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400024, guid: f8fe0353eb3920643afb72864b58b3c8, type: 3}
