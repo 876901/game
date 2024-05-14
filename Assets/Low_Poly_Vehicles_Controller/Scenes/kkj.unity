@@ -1016,8 +1016,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 1.5166016, y: 0}
+  m_SizeDelta: {x: 0.2332, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &269450753
 PrefabInstance:
@@ -6717,6 +6717,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1673670828}
   - component: {fileID: 1673670829}
+  - component: {fileID: 1673670830}
   m_Layer: 5
   m_Name: Hpbar
   m_TagString: Untagged
@@ -6743,8 +6744,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8, y: 0}
-  m_SizeDelta: {x: 100, y: 20}
+  m_AnchoredPosition: {x: 0.9486, y: 162}
+  m_SizeDelta: {x: 230.3971, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1673670829
 MonoBehaviour:
@@ -6797,6 +6798,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1673670830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673670827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4f3e30c0e6dac42b80ce02c3266289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1673670829}
 --- !u!1001 &1691866251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7966,8 +7980,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 45.4, y: 0}
-  m_SizeDelta: {x: 100, y: 0}
+  m_AnchoredPosition: {x: -1.5000076, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1950626298
 MonoBehaviour:
