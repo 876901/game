@@ -25,11 +25,6 @@ public class Bullet : MonoBehaviour
     void OnTriggerEnter(Collider col)
     {
 
-        if (col.gameObject.tag == "Vehicles")
-        {
-            Hp.HP --;
-        }
-
         AudioSource.PlayClipAtPoint(sound, this.transform.position);// transform.position 위치에서 재생
         GameObject copy_exp = Instantiate(exp) as GameObject;
         copy_exp.transform.position = this.transform.position;

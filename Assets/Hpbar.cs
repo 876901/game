@@ -7,12 +7,6 @@ public class Hpbar : MonoBehaviour
     public static float maxHP;
     public static float HP;
 
-    void Start()
-    {
-        HP = 10;
-        maxHP = 10;
-    }
-
 
     public void SetMaxHP(float maxHP)
     {
