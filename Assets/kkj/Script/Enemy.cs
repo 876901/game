@@ -97,7 +97,7 @@ public class Enemy : MonoBehaviour
         if (distance < 1000.0f)
         {
 
-            nvAgent.SetDestination(target.transform.position);
+            nvAgent.SetDestination(target.position);
             //nvAgent.speed = 0.2f; // 느리게 따라온다
             if (fTime > 5.0f)
             {

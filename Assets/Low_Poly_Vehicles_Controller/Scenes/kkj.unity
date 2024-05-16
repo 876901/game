@@ -3662,7 +3662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00e1f0ab310101548b51eb0ba59c029f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyTankPrefab: {fileID: 963462877}
+  enemyTankPrefab: {fileID: 7458312591920669524, guid: a9e251b77df8f1641843b40ecaf93518, type: 3}
   waveInterval: 10
   enemiesPerWave: 5
   spawnDistanceMin: 20
@@ -3939,11 +3939,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad96f4cea17340f4fbcf6b1ef4a88ca4, type: 3}
---- !u!1 &963462877 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7458312591920669524, guid: a9e251b77df8f1641843b40ecaf93518, type: 3}
-  m_PrefabInstance: {fileID: 1460991512}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &984580853 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5496328056978243567, guid: ad96f4cea17340f4fbcf6b1ef4a88ca4, type: 3}
@@ -5780,6 +5775,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Vehicles
       objectReference: {fileID: 0}
+    - target: {fileID: 4494885929481379651, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: controlVehicle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6473901867720819401, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5912,6 +5911,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 461089631, guid: a9e251b77df8f1641843b40ecaf93518, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 110.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 461089631, guid: a9e251b77df8f1641843b40ecaf93518, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 550224252, guid: a9e251b77df8f1641843b40ecaf93518, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 276.4196
+      objectReference: {fileID: 0}
+    - target: {fileID: 550224252, guid: a9e251b77df8f1641843b40ecaf93518, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.2207
+      objectReference: {fileID: 0}
+    - target: {fileID: 735020046, guid: a9e251b77df8f1641843b40ecaf93518, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1834020387, guid: a9e251b77df8f1641843b40ecaf93518, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -5919,6 +5938,14 @@ PrefabInstance:
     - target: {fileID: 1834020387, guid: a9e251b77df8f1641843b40ecaf93518, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834020387, guid: a9e251b77df8f1641843b40ecaf93518, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 117.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834020387, guid: a9e251b77df8f1641843b40ecaf93518, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4.21
       objectReference: {fileID: 0}
     - target: {fileID: 7458312591920669524, guid: a9e251b77df8f1641843b40ecaf93518, type: 3}
       propertyPath: m_Name

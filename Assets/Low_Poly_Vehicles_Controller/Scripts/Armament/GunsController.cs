@@ -119,8 +119,10 @@ public class GunsController : MonoBehaviour
             if (hit.collider.gameObject.CompareTag("Enemy"))
             {
                 Score.Hit++;
+                Enemyhp.EHP--;
                 // Destroy the enemy object
-                Destroy(hit.collider.gameObject);
+                if(Enemyhp.EHP == 0) { Destroy(hit.collider.gameObject); }
+                
             }
         }
     }
