@@ -40,6 +40,8 @@ public class GunsController : MonoBehaviour
     private Vector3 positionRecoil;
     private Rigidbody rb;
 
+    public int damage = 1;// 총알 데미지
+
     private void Start()
     {
         currentBullets = maxBulletsPerMag;
@@ -113,15 +115,20 @@ public class GunsController : MonoBehaviour
         fireTimer = 0.0f;
 
         // Raycast to detect if the bullet hits an enemy
+
         RaycastHit hit;
         if (Physics.Raycast(ejectPoint.position, ejectPoint.forward, out hit, Mathf.Infinity))
         {
+
             if (hit.collider.gameObject.CompareTag("Enemy"))
             {
-                Score.Hit++;
-                Enemyhp.EHP--;
+                Enemyhp enemy = hit.collider.GetComponent<Enemyhp>();
+
+
+                enemy.TankDamage(damage);// 전체적으로 피가 깎여서 함수 처리 해서 개별 깎이게 함
+
                 // Destroy the enemy object
-                if(Enemyhp.EHP == 0) { Destroy(hit.collider.gameObject); }
+                //if(Enemyhp.EHP == 0) { Destroy(hit.collider.gameObject); }
                 
             }
         }

@@ -23,7 +23,7 @@ public class TanksController : MonoBehaviour
 	public float maxBrakeTorque = 1000f;
 	public float motorForce = 1500;
 	public float topSpeed = 20;
-	public float currentSpeed;
+	public float currentSpeed =15;
 
 	public Material rightTracksMat;
 	public Material leftTracksMat;
