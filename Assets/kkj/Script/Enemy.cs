@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         //gameObject myTank = GameObject("Tank")  ?? 교수님이 따로 적어주신거 맞는지 모르겠음
-        Invoke("FindTarget", 1f);
+        //Invoke("FindTarget", 1f);
 
         //target = GameObject.FindGameObjectWithTag("Target").GetComponent<Transform>();
         //target = tar.GetComponent<Transform>();
@@ -46,6 +46,8 @@ public class Enemy : MonoBehaviour
         rotAngle = 15;
         nvAgent = this.GetComponent<NavMeshAgent>();
         spPoint = EspPoint.GetComponent<Transform>();
+        target = GameObject.FindGameObjectWithTag("Vehicles").GetComponent<Transform>();
+
     }
     void FindTarget()
     {
