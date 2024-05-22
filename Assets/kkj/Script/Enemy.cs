@@ -49,11 +49,11 @@ public class Enemy : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Vehicles").GetComponent<Transform>();
 
     }
-    void FindTarget()
+    /*void FindTarget()
     {
         target = GameObject.FindGameObjectWithTag("Vehicles").GetComponent<Transform>();
         // 이후의 코드에서 target을 사용할 수 있습니다.
-    }
+    }*/
 
     // Update is called once per frame
     void Update()

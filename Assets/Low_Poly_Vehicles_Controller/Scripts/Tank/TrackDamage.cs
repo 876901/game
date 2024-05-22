@@ -16,6 +16,7 @@ public class TrackDamage : MonoBehaviour
     private void OnTriggerEnter(Collider col)
     {
         Debug.Log("TRRIGGGERRR");
+        Debug.Log(col);
 
         if(col.gameObject.tag == "Mine")
         {

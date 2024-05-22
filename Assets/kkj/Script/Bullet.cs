@@ -24,6 +24,7 @@ public class Bullet : MonoBehaviour
     }
     void OnTriggerEnter(Collider col)
     {
+        
 
         if (col.gameObject.tag == "Vehicles")
         {
