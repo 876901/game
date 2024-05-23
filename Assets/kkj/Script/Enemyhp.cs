@@ -19,6 +19,7 @@ public class Enemyhp : MonoBehaviour
     public void TankDamage(int damage)
         {
             EHP -= damage;
+        
         if (EHP <= 0)
         {
             Destroy(gameObject);

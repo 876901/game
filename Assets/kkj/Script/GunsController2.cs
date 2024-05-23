@@ -5,22 +5,22 @@ using UnityEngine;
 public class GunsController2 : MonoBehaviour
 {
     [Header("Bullets Actions")]
-	public bool gunsActive;
+    public bool gunsActive;
     public int currentBullets;
     public int maxBulletsPerMag = 100;
     public int bulletsLeft = 300;
     public float fireRate = 0.17f;
-	
+
     [Header("Audio Actions")]
     public AudioClip shotSound;
     public AudioSource barrelSource;
-    public float minPitch = .9f;
+    public float minPitch = 0.9f;
     public float maxPitch = 1.1f;
-	
+
     [Header("Recoil Actions")]
     public float recoilForce;
     public Transform recoilPosition;
-	
+
     [Header("Shot Actions")]
     public Vector3 randomRotation = new Vector3(.1f, .1f, .1f);
     public GameObject ShellPrefab;
@@ -29,7 +29,7 @@ public class GunsController2 : MonoBehaviour
     public int hitDestroyTime = 10;
     public ParticleSystem muzzleFlash;
     public Transform ejectPoint;
-	
+
     [Header("Barrel Recoil Actions")]
     public Transform recoilBarrelTransform;
     public Vector3 kickBackRecoilBarrel;
@@ -56,7 +56,7 @@ public class GunsController2 : MonoBehaviour
         if (!gunsActive)
             return;
 
-        if (Input.GetKey(KeyCode.Mouse0) && gunsActive)
+        if (Input.GetKeyDown(KeyCode.Space) && gunsActive && Shop.bullActive)
         {
             Shoot();
         }
@@ -69,7 +69,7 @@ public class GunsController2 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(recoilBarrelTransform)
+        if (recoilBarrelTransform)
             Recoil();
     }
 
@@ -134,5 +134,4 @@ public class GunsController2 : MonoBehaviour
             }
         }
     }
-
 }

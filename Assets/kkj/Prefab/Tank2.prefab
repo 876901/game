@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5385601629260095276
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2484185305493543437, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: m_Name
+      value: Tank2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3254544983015720380, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: m_TagString
+      value: Vehicles
+      objectReference: {fileID: 0}
+    - target: {fileID: 4494885929481379651, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: controlVehicle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473901867720819401, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473901867720819401, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.365889
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473901867720819401, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.244714
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473901867720819401, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.687551
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473901867720819401, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473901867720819401, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473901867720819401, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473901867720819401, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473901867720819401, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473901867720819401, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473901867720819401, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847721547609527492, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: limitRotation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851105046302863546, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}
+      propertyPath: gunsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 908bc32c308b1a54b8605c8e87402b74, type: 3}

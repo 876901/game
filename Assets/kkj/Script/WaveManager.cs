@@ -41,9 +41,12 @@ public class WaveManager :MonoBehaviour
         for (int i = 0; i < enemiesPerWave; i++)
         {
             Vector3 spawnDirection = Random.insideUnitSphere; // 랜덤 방향
+            spawnDirection.y = 0;
             float spawnDistance = Random.Range(spawnDistanceMin, spawnDistanceMax); // 랜덤 거리
             Vector3 spawnPosition = player.transform.position + spawnDirection * spawnDistance;
             Instantiate(enemyTankPrefab, spawnPosition, Quaternion.identity);
+            spawnPosition.y = -7.4f; // Y축 고정
+
             yield return new WaitForSeconds(1f); // 각 적 생성 간격
         }
 

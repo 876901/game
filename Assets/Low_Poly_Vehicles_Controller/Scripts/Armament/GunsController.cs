@@ -6,9 +6,9 @@ public class GunsController : MonoBehaviour
 {
     [Header("Bullets Actions")]
 	public bool gunsActive;
-    public int currentBullets;
-    public int maxBulletsPerMag = 100;
-    public int bulletsLeft = 300;
+    public static int currentBullets;
+    public int maxBulletsPerMag = 300;
+    public static int bulletsLeft = 300;
     public float fireRate = 0.17f;
 	
     [Header("Audio Actions")]
@@ -63,6 +63,10 @@ public class GunsController : MonoBehaviour
             fireTimer += Time.deltaTime;
 
         Debug.DrawRay(ejectPoint.position, ejectPoint.forward * 200);
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Reload();
+        }
     }
 
     private void FixedUpdate()
@@ -119,7 +123,7 @@ public class GunsController : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ejectPoint.position, ejectPoint.forward, out hit, Mathf.Infinity))
         {
-
+            Debug.Log(hit);
             if (hit.collider.gameObject.CompareTag("Enemy"))
             {
                 Enemyhp enemy = hit.collider.GetComponent<Enemyhp>();
@@ -132,6 +136,18 @@ public class GunsController : MonoBehaviour
                 
             }
         }
+
+    }
+    private void Reload()
+    {
+        if (bulletsLeft <= 0 || currentBullets == maxBulletsPerMag)
+            return;
+
+        int bulletsToLoad = maxBulletsPerMag - currentBullets;
+        int bulletsToDeduct = (bulletsLeft >= bulletsToLoad) ? bulletsToLoad : bulletsLeft;
+
+        bulletsLeft -= bulletsToDeduct;
+        currentBullets += bulletsToDeduct;
     }
 
 }
