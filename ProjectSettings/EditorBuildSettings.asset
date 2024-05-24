@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/1. Make kung/game over.unity
+    guid: 6b2866c93de973d49a594a968ea655b8
+  - enabled: 1
+    path: Assets/1. Make kung/Game rule.unity
+    guid: 65e1cde4bf0c8034fb18a00ddb379a7d
+  - enabled: 1
+    path: Assets/1. Make kung/Game start.unity
+    guid: 8a43d130ee527c341bfedca3a7fe6d74
+  - enabled: 1
+    path: Assets/1. Make kung/win.unity
+    guid: a456f38186634044ab4d7ba6720c28f9
+  - enabled: 1
+    path: Assets/1. Make kung/1R.unity
+    guid: b161aa84df8259e48bbf3e82ba1b8754
   m_configObjects: {}

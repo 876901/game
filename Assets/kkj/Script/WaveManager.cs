@@ -4,18 +4,18 @@ using System.Collections;
 public class WaveManager :MonoBehaviour
 {
     public GameObject enemyTankPrefab; // 적 탱크 프리팹
-    public float waveInterval = 1f; // 웨이브 간격 (초)
+    public float waveInterval = 10f; // 웨이브 간격 (초)
     public int enemiesPerWave = 5; // 웨이브당 생성되는 적 수
     public float spawnDistanceMin = 20f; // 플레이어로부터 최소 생성 거리
     public float spawnDistanceMax = 40f; // 플레이어로부터 최대 생성 거리
 
     private bool isWaveActive = false;
     private int currentWave = 0;
-    private GameObject player; // 플레이어 오브젝트
+    public GameObject player; // 플레이어 오브젝트
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Spawn");
+        //player = GameObject.FindGameObjectWithTag("Spawn");
         StartCoroutine(StartWaveRoutine());
     }
 
@@ -25,6 +25,7 @@ public class WaveManager :MonoBehaviour
         {
             yield return new WaitForSeconds(waveInterval);
             StartWave();
+            waveInterval = waveInterval / 2;
         }
     }
 
@@ -32,8 +33,11 @@ public class WaveManager :MonoBehaviour
     {
         currentWave++;
         isWaveActive = true;
+        if(currentWave <= 2) {
+            StartCoroutine(SpawnEnemiesRoutine());
+        }
 
-        StartCoroutine(SpawnEnemiesRoutine());
+        
     }
 
     IEnumerator SpawnEnemiesRoutine()

@@ -76,8 +76,8 @@ public class Shop : MonoBehaviour
     {
         if (Score.Hit != 0 && Score.Hit >= bullValue)
         {
-            Score.Hit = Score.Hit - 1;
-            Debug.Log("총알 구매 성공");
+            Score.Hit = Score.Hit - 10;
+            Debug.Log("총 업그레이드 성공");
 
             if (!active)
             {
@@ -97,7 +97,7 @@ public class Shop : MonoBehaviour
     {
         if (Score.Hit != 0 && Score.Hit >= hpValue)
         {
-            Score.Hit = Score.Hit - 1;
+            Score.Hit = Score.Hit - 5;
             Hp.HP = Hp.HP + 5;
             Debug.Log("체력 회복");
         }
@@ -113,9 +113,9 @@ public class Shop : MonoBehaviour
     {
         if (Score.Hit != 0 && Score.Hit >= reloadValue)
         {
-            Score.Hit = Score.Hit - 1;
+            Score.Hit = Score.Hit - 3;
             Debug.Log("총알 구매");
-            GunsController.bulletsLeft += 100;
+            GunsController.bulletsLeft += 200;
         }
         else
         {

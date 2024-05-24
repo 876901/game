@@ -24,7 +24,7 @@ public class Hp : MonoBehaviour
         //Debug.Log(HP);
         if (HP ==0)
         {
-            //SceneManager.LoadScene("Lose");
+            SceneManager.LoadScene("game over");
         }
        
     }

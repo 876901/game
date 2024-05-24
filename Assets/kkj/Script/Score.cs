@@ -14,7 +14,7 @@ public class Score : MonoBehaviour
     void Start()
     {
         Hit = 0;
-        endGame = 120f;
+        endGame = 150f;
 
     }
 
